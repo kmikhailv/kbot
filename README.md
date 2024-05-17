@@ -7,9 +7,9 @@ wget https://github.com/kmikhailv/kbot/raw/main/kbot
 chmod +x ./kbot
 ./kbot
 
-And send a command from the list below in Telegram t.me/kmihv_bot :
-"/start hello"
-"/start Glory to Ukraine"
+And send a command from the list below in Telegram t.me/kmihv_bot
+
+"/start hello"  , "/start Glory to Ukraine"
 
 ## To compile from source:
 
