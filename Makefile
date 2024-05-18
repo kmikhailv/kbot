@@ -52,3 +52,5 @@ image_macos:
 
 image_windows:
 	docker build --build-arg build_target=windows . -t ${REGISTRY}/${APP}:${VERSION}-windows
+
+image:image_linux image_linux_arm image_macos image_windows
