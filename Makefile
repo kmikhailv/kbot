@@ -19,6 +19,7 @@ build: format
 
 clean:
 	rm -rf kbot
+	docker rmi --force $(shell docker images --filter=reference=${REGISTRY}/${APP}* -q)
 
 push:
 	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}
@@ -51,6 +52,3 @@ image_macos:
 
 image_windows:
 	docker build --build-arg build_target=windows . -t ${REGISTRY}/${APP}:${VERSION}-windows
-
-image_clean:
-	docker rmi --force $(shell docker images --filter=reference=${REGISTRY}/${APP}* -q)
