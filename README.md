@@ -15,4 +15,9 @@ And send a command from the list below in Telegram t.me/kmihv_bot
 
 git pull https://github.com/kmikhailv/kbot.git
 cd kbot
-go build
+make linux # or windows/macos/linux_arm architecture
+
+## To build docker images:
+git pull https://github.com/kmikhailv/kbot.git
+cd kbot
+make image_linux # or image_windows/image_macos/image_linux_arm architecture

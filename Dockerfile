@@ -1,8 +1,9 @@
 FROM golang:1.19 as builder
+ARG build_target=linux
 
 WORKDIR /go/src/app
 COPY . .
-RUN make build
+RUN make $build_target
 
 FROM  scratch
 WORKDIR /
