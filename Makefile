@@ -51,3 +51,6 @@ image_macos:
 
 image_windows:
 	docker build --build-arg build_target=windows . -t ${REGISTRY}/${APP}:${VERSION}-windows
+
+image_clean:
+	docker rmi --force $(shell docker images --filter=reference=${REGISTRY}/${APP}* -q)
