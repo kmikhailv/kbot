@@ -21,3 +21,8 @@ make linux # or windows/macos/linux_arm architecture
 git pull https://github.com/kmikhailv/kbot.git
 cd kbot
 make image_linux # or image_windows/image_macos/image_linux_arm architecture
+
+
+## kubectl ai examples
+
+secret for redis:create secret for redis:create secret for redis:https://raw.githubusercontent.com/kmikhailv/kbot/main/yaml/app-secret.yaml
